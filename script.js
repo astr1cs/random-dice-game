@@ -13,9 +13,14 @@ document.querySelectorAll("img")[1].setAttribute("src",radomImageSource2);
 
 if(random>random2)
 {
-document.getElementById("demo").innerHTML="Player 1 Wins 🚩"
+document.querySelector("h1").innerHTML="Player 1 Wins! 🚩";
+}
+else if(random<random2)
+{ 
+
+    document.querySelector("h1").innerHTML="🚩 Player 2 Wins!"
 }
 else
 {
-    document.getElementById("demo").innerHTML="🚩 Player 2 Wins"
+  document.querySelector("h1").innerHTML="Draw!"
 }
